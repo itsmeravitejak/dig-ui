@@ -58,7 +58,7 @@ class App extends React.Component {
         
     }
   render() {
-  const query_types=["A","AAAA","ANY","CNAME","NS","MX"].map((each_item)=>
+  const query_types=["A","AAAA","ANY","CNAME","NS","MX","SOA"].map((each_item)=>
     <label className="btn btn-secondary" key={each_item}>
         <input type="radio" name="query_type" value={each_item} onClick={this.handleQueryClick}/> {each_item}
     </label>
